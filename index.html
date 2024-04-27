@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
-
+        <div class="books-read"><span>BOOKS READ: </span><span>0</span></div>
+        <div class="books-unread"><span>BOOKS UNREAD: </span><span>0</span></div>
+        <div class="book-total"><span>TOTAL BOOKS: </span><span>0</span></div>
+         <button class="delete-all">DELET ALL</button>
     </header>
     <div class="side-bare">
-
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>bookshelf</title>
+                <path d="M9 3V18H12V3H9M12 5L16 18L19 17L15 4L12 5M5 5V18H8V5H5M3 19V21H21V19H3Z" />
+            </svg>
+            <h2>Library</h2>
+        </div>
+        <form >
+            <label for="book-name">What is the name of the book?</label>
+            <input id="book-name" name="book-name" type="text">
+            <label for="book-author">Who is the author of this book?</label>
+            <input id="book-author" name="book-author" type="text">
+            <label for="book-page-number">How many pages in this book?</label>
+            <input id="book-page-number" name="book-page-number" type="number">
+            <label for="is-book-readed" class="check-box-label"><input type="checkbox" name="is-book-readed" id="is-book-readed">I have already read this book!</label>
+            <button class="submit" type="submit">ADD NEW BOOK</button>
+        </form>
+        <div class="footer">about the project</div>
     </div>
     <main>
-
+        <table>
+            <thead>
+                <tr class="tr-style">
+                    
+                    <td>Title</td>
+                    <td>AUTHOR</td>
+                    <td>PAGES</td>
+                    <td>STATUS</td>
+                    <td>REMOVAL</td>
+                </tr>
+            </thead>
+            <tbody>
+         
+            </tbody>
+        </table>
     </main>
 </body>
+
 </html>
